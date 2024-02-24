@@ -5,9 +5,9 @@ namespace StatsCounter.Models;
 public class RepositoryStats
 {
     public string Owner { get; set; }
-    public IDictionary<char, int> Letters { get; set; }
-    public double AvgStargazers { get; set; }
+    public HashSet<string> Languages { get; set; }
+    public long Size { get; set; }
+    public int Repositories { get; set; }
     public double AvgWatchers { get; set; }
     public double AvgForks { get; set; }
-    public double AvgSize { get; set; }
 }
